@@ -46,7 +46,6 @@ router.post('/', UserAuth, async (req, res) => {
 // });
 
 // This is your Stripe CLI webhook secret for testing your endpoint locally.
-// const endpointSecret = "whsec_c44b014a9ff1f0c70b5a66ca4aeae5198f646f85957f3b74da6ae332ad7ff1c1";
 
 router.post('/webhook', express.raw({ type: 'application/json' }), async (request, response) => {
   // const sig = request.headers['stripe-signature'];
